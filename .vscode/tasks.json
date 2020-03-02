@@ -1,0 +1,25 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558 
+    // for the documentation about the tasks.json format
+    // `YOUR_THEME_NAME` - your theme name. ex. `myvuefront`
+    // `YOUR_VUEFRONT_WEBAPP_TEST_FOLDER` - your vuefront web app test folder in VSCODE Workspace. ex. `myvuefront-theme-test`
+    // `YOUR_THEME_NPM_NAME` - your NPM package name. ex. `vuefront-myvuefront-theme`
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "YOUR_THEME_NAME Theme Build",
+            "type": "npm",
+            "script": "build",
+            "problemMatcher": []
+        },
+        {
+            "label": "YOUR_THEME_NAME Theme Sync",
+            "type": "shell",
+            "command": "sync-glob '**/*' '!node_modules/**/*' '../YOUR_VUEFRONT_WEBAPP_TEST_FOLDER/node_modules/YOUR_THEME_NPM_NAME' --watch --delete",
+            "problemMatcher": [],
+            "presentation": {
+                "group": "Front"
+            }
+        }
+    ]
+}
