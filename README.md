@@ -33,7 +33,7 @@ Name your theme in the following pattern:
 
 1. `.vscode/tasks.json` - will add task to your VS Code. We recommend installing a VS Code plugin `tasks` to see these tasks in the status bar for ease of access.
 2. `package.json`
-3. `src/index.js`
+3. `index.js`
 
 You will need to edit these veriables
 
